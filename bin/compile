@@ -23,7 +23,11 @@ WGET=$(which wget)
 CONDA_HOME="$1/.conda"
 CONDA_BIN="$CONDA_HOME/bin"
 
-MINICONDA_FILE="Miniconda-latest-Linux-x86_64.sh"
+if [ ! -e "$ROOT/conda_runtime.txt" ]; then
+	MINICONDA_FILE="Miniconda-latest-Linux-x86_64.sh"
+else
+	MINICONDA_FILE=$(cat "$ROOT/conda_runtime.txt")
+fi
 MINICONDA_URI="http://repo.continuum.io/miniconda/$MINICONDA_FILE"
 MINICONDA_CACHE="$CACHE/$MINICONDA_FILE"
 
