@@ -11,5 +11,5 @@ To use this buildpack specify the URI of the repository when pushing an IPython 
 The buildpack supports dependencies declaration using a `requirements.txt` file located in the root of the directory being pushed to Cloud Foundry.
 
 
-[Cloud Foundry]: http://www.cloudfoundry.com
-[IPython Notebook]: http://ipython.org/notebook.html
+[Cloud Foundry]: https://www.cloudfoundry.org
+[IPython Notebook]: https://ipython.org/notebook.html
